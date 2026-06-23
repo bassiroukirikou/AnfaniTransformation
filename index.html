@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anfani Transformation — Valorisation du soja</title>
+  <meta name="description" content="Anfani Transformation (Bénin) valorise le soja : huile raffinée, tourteau et provende animale — création d'emplois et soutien aux producteurs locaux." />
+  <meta name="theme-color" content="#006400" />
+
+  <!-- Favicons & social image (remplacez les chemins par vos URLs réelles après publication) -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      --green-900:#006400;
+      --green-700:#228B22;
+      --bg:#f9f9f9;
+      --text:#222;
+      --card:#fff;
+      --muted:#666;
+      --max-w:1100px;
+      --radius:10px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
+    a{color:inherit}
+    .container{max-width:var(--max-w);margin:0 auto;padding:0 16px}
+
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:16px;top:16px;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;z-index:1000}
+
+    /* Header with logo */
+    header.site-header{background:var(--green-900);color:#fff;padding:18px 0}
+    .header-inner{display:flex;align-items:center;gap:16px;justify-content:flex-start;max-width:var(--max-w);margin:0 auto;padding:0 16px}
+    .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .site-logo{height:72px;width:auto;display:block;border-radius:8px;background:transparent}
+    .site-title h1{margin:0;font-size:1.2rem}
+    .site-title p{margin:4px 0 0;font-weight:600;opacity:.95}
+
+    nav.site-nav{background:#222}
+    nav .inner{display:flex;gap:8px;justify-content:center;padding:10px;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:700;padding:8px 12px;border-radius:6px}
+    nav a:focus{outline:3px solid #ffd54f;outline-offset:3px}
+
+    .hero{background:linear-gradient(180deg,var(--green-700),var(--green-900));color:#fff;display:flex;align-items:center;justify-content:center;min-height:160px;text-align:center;padding:28px}
+    main{padding:28px 0 56px}
+
+    section{padding:24px 0}
+    h2{margin:0 0 12px;color:var(--green-900);font-size:1.25rem}
+    p.lead{max-width:820px;margin:0 auto;color:var(--muted)}
+
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:12px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.04)}
+    .card h3{margin:0 0 6px;color:var(--green-700)}
+    .card p{margin:0;color:var(--muted)}
+
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    .contact-card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    form label{display:block;font-weight:600;margin:8px 0 6px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:.95rem}
+    button{margin-top:10px;background:var(--green-900);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    footer.site-footer{background:#222;color:#fff;padding:18px 0;text-align:center;font-size:.9rem}
+
+    @media (max-width:780px){
+      .header-inner{flex-direction:column;align-items:center;gap:8px;padding:12px}
+      .site-logo{height:56px}
+      .site-title h1{font-size:1rem}
+      .contact-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- Remplacez assets/logo.png par le chemin où vous hébergerez le fichier image fourni -->
+      <a class="brand" href="/" aria-label="Anfani Transformation — Accueil">
+        <img
+          src="assets/logo.png"
+          srcset="assets/logo@2x.png 2x, assets/logo.webp 1x"
+          alt="Logo Anfani Transformation — Agroalimentaire & soja"
+          class="site-logo"
+          width="160" height="160"
+        />
+        <div class="site-title">
+          <h1>Anfani Transformation</h1>
+          <p>Transformer le soja pour nourrir et bâtir l'avenir</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="site-nav" role="navigation" aria-label="Navigation principale">
+    <div class="container inner">
+      <a href="#accueil">Accueil</a>
+      <a href="#presentation">Présentation</a>
+      <a href="#produits">Produits</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero" id="accueil" role="img" aria-label="Bannière de bienvenue Anfani Transformation">
+    <div class="container"><h2 style="margin:0">Bienvenue chez Anfani Transformation</h2></div>
+  </div>
+
+  <main id="main" class="container" role="main">
+    <section id="presentation" aria-labelledby="pres">
+      <h2 id="pres">Présentation</h2>
+      <p class="lead">Anfani Transformation est une entreprise béninoise spécialisée dans la valorisation du soja en huile raffinée, tourteau pour l'alimentation animale et provende. Nous favorisons la création d'emplois et le soutien aux producteurs locaux pour une souveraineté alimentaire durable.</p>
+    </section>
+
+    <section id="produits" aria-labelledby="prods">
+      <h2 id="prods">Nos Produits</h2>
+      <div class="products" role="list">
+        <article class="card" role="listitem" aria-labelledby="p1"><h3 id="p1">Huile de soja</h3><p>Huile raffinée, adaptée pour la cuisine et l'industrie alimentaire.</p></article>
+        <article class="card" role="listitem" aria-labelledby="p2"><h3 id="p2">Tourteau de soja</h3><p>Coproduit riche en protéines, idéal pour l'alimentation animale.</p></article>
+        <article class="card" role="listitem" aria-labelledby="p3"><h3 id="p3">Provende animale</h3><p>Mélanges nutritifs pour élevages, formulés pour performance et santé.</p></article>
+      </div>
+    </section>
+
+    <section id="impact" aria-labelledby="imp">
+      <h2 id="imp">Notre Impact</h2>
+      <p class="lead">Création d'emplois, soutien aux producteurs locaux et contribution au développement durable du Bénin.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-grid">
+        <aside class="contact-card" aria-labelledby="coord">
+          <h3 id="coord">Coordonnées</h3>
+          <p>Email : <a href="mailto:info@anfani-transformation.com">info@anfani-transformation.com</a></p>
+          <p>Téléphone : <a href="tel:+2290163982708">+229 0163982708</a></p>
+          <p>Adresse : Bénin (à préciser)</p>
+        </aside>
+
+        <div class="contact-card" aria-labelledby="form-title">
+          <h3 id="form-title">Envoyer un message</h3>
+          <form action="https://example.com/form-endpoint" method="post" aria-label="Formulaire de contact Anfani">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required placeholder="Votre nom">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="votre@exemple.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+
+            <button type="submit">Envoyer</button>
+          </form>
+          <p style="margin-top:.6rem;color:var(--muted);font-size:.9rem">Ou écrivez-nous : <a href="mailto:info@anfani-transformation.com">info@anfani-transformation.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Anfani Transformation — Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>
